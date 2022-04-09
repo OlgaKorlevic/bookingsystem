@@ -72,4 +72,38 @@ else {
 };
 }; 
 
+//Code for choice of meals:
+//1. Checks that the meal is chosen DONE
+//GLITCH the error message doesn't go away after the choice is made 
+
+function mealChoice (){
+    const mealChosen=document.getElementById('meal').value 
+        if (mealChosen == "nochoice") {
+        document.getElementById("disp3").innerHTML = "Please select the meal option";
+        return false;//Check if I can use that in previous functions
+        }else{
+        //Code in green was to check whih meal value will be returned returned
+        //document.getElementById("disp3").innerHTML = "Chosen meal"+mealChosen;
+        document.getElementById("disp3").innerHTML = "";
+        return mealChosen;
+}
+}
+
+//Code for choice of payment methods
+//1. Checks that the payment option is chosen DONE
+//GLITCH the error message doesn't go away after the choice is made
+function payment (){
+    const paymentOption=document.getElementById('payment').value 
+        if (paymentOption == "nochoice") {
+        document.getElementById("disp4").innerHTML = "Please select the payment option";
+        return false;//Check if I can use that in previous functions
+        }else{
+        //Code in green was to check whih meal value will be returned returned
+        //document.getElementById("disp4").innerHTML = "Payment option"+paymentOption;
+        document.getElementById("disp4").innerHTML = "";
+        return paymentOption;
+}
+}
+
+
 
