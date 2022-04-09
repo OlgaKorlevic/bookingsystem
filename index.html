@@ -21,8 +21,30 @@ value="return" onclick="hideReturn(); flightDates()">Return<br>
         <label id="retlb">Return<input type="date" name="return"  value="return" id="ret" /></label>
       </form>
       <div id="disp2" style="color:red; font-size:18px; font-weight:bold;"></div> <!-- Message that appears when nothing is selected-->
-     <!-- <div id="disp3" style="color:red; font-size:18px; font-weight:bold;"></div>--><!-- DELETE when not needed-->
       <br><button onclick= "flightDates()" type="button">Check Dates</button><!--Delete here and assign to the final Submit button-->
 </p>
-
-
+<!-- Drop down for food type (veg/non-veg)-->
+<p>
+<select id="meal" name="meal">
+<!--<label for="meal">Choose your meal:</label>   -->
+  <option value="nochoice">Meal options</option>
+  <option value="veg">Veg</option>
+  <option value="nonveg">Non-Veg</option>
+  <option value="lact">Lactose free</option>
+</select>
+<div id="disp3" style="color:red; font-size:18px; font-weight:bold;"></div>
+<br><button onclick= "mealChoice()" type="button">Check Meal Choice</button><!--Delete here and assign to the final Submit button-->
+</p>
+<!-- Drop down for payment options-->
+<p>
+<select id="payment" name="payment">
+    <!--<label for="payment">Choose your payment option (required):</label>-->   
+      <option value="nochoice" >payment option</option>
+      <option value="card" >bank card</option>
+      <option value="transfer" >bank transfer</option>
+      <option value="paypal" >PayPal</option>
+    </select>
+    <div id="disp4" style="color:red; font-size:18px; font-weight:bold;"></div>
+    <br><button onclick= "payment()" type="button">Check Payment Options</button><!--Delete here and assign to the final Submit button-->
+   </p> 
+    
