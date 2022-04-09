@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="main.js"></script>
+</head>
+<body>
+<!--Radio buttons with One way or Return-->
+<input type="radio" name="button" id="oneWay"
+value="oneWay" onclick="hideReturn(); flightDates()">One Way<br>
+
+<input type="radio" name="button" id="return"
+value="return" onclick="hideReturn(); flightDates()">Return<br>
+</form>
+<br>
+<div id="disp" style="color:red; font-size:18px; font-weight:bold;"></div> <!-- Message that appears when nothing is selected-->
+<br><button onclick= "tripType()" type="button">Check Trip Type</button><!--Delete here and assign to the final Submit button-->
+<p>
+<!--Code for departure and return dates-->
+    <form id="dates">
+        <label id="deplb">Departure<input type="date" name="departure" value="departure" id="dep"  /></label>
+        <label id="retlb">Return<input type="date" name="return"  value="return" id="ret" /></label>
+      </form>
+      <div id="disp2" style="color:red; font-size:18px; font-weight:bold;"></div> <!-- Message that appears when nothing is selected-->
+     <!-- <div id="disp3" style="color:red; font-size:18px; font-weight:bold;"></div>--><!-- DELETE when not needed-->
+      <br><button onclick= "flightDates()" type="button">Check Dates</button><!--Delete here and assign to the final Submit button-->
+</p>
+
+
